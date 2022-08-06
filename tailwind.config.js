@@ -19,6 +19,8 @@ module.exports = {
         purple: "#5b72ee",
         yellow: "#fff2e1",
         blue: "#29b9e7",
+        sunnyTop: "#ffe25a",
+        sunnyBottom: "#ffa852",
       },
     },
   },
