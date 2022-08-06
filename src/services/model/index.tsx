@@ -4,3 +4,10 @@ export interface LogoModel {
   width: number;
   height: number;
 }
+
+export interface AllInOneWrapperModel {
+  iconColor: string;
+  icon: JSX.Element;
+  heading: string;
+  desc: string;
+}

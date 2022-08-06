@@ -12,6 +12,9 @@
   header {
     clip-path: ellipse(100% 100% at top);
   }
+  section {
+    @apply mb-16;
+  }
   input {
     @apply outline-none;
   }
