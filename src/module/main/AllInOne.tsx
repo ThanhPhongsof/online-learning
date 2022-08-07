@@ -1,10 +1,15 @@
+import { LayoutContainer } from "components/layout";
 import { AllInOneMain, AllInOneTop } from "./parts/allinone";
 
 const AllInOne = () => {
   return (
-    <section className="allinone flex flex-col gap-28">
-      <AllInOneTop></AllInOneTop>
-      <AllInOneMain></AllInOneMain>
+    <section className="allinone">
+      <LayoutContainer>
+        <div className="flex flex-col gap-28">
+          <AllInOneTop />
+          <AllInOneMain />
+        </div>
+      </LayoutContainer>
     </section>
   );
 };

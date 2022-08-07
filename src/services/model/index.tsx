@@ -11,3 +11,7 @@ export interface AllInOneWrapperModel {
   heading: string;
   desc: string;
 }
+
+export interface SideBarModel {
+  link: string;
+}
