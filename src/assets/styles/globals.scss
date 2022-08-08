@@ -63,3 +63,15 @@ img {
     clip-path: none;
   }
 }
+
+.features-box-heading {
+  @apply text-primary font-semibold text-xl lg:text-2xl mb-5;
+}
+
+.features-box-heading-secondary {
+  @apply text-secondary font-bold font-secondary;
+}
+
+.features-box-desc {
+  @apply text-left text-lg text-gray;
+}

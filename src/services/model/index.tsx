@@ -15,3 +15,9 @@ export interface AllInOneWrapperModel {
 export interface SideBarModel {
   link: string;
 }
+
+export interface UserRequestsModel {
+  id: number;
+  icon: JSX.Element;
+  desc: string;
+}
