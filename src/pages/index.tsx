@@ -6,7 +6,6 @@ import {
   Integrations,
   News,
   OurFeatures,
-  Testimonials,
   WhatIsSkilline,
   YouCanDoWithSkilline,
 } from "module/main";
@@ -21,7 +20,6 @@ const Home: NextPage = () => {
         <YouCanDoWithSkilline></YouCanDoWithSkilline>
         <OurFeatures></OurFeatures>
         <Integrations></Integrations>
-        <Testimonials></Testimonials>
         <News></News>
       </Layout>
     </>

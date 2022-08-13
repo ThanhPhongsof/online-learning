@@ -21,3 +21,10 @@ export interface UserRequestsModel {
   icon: JSX.Element;
   desc: string;
 }
+
+export interface IntegrationsSocialModel {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
