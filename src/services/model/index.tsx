@@ -28,3 +28,10 @@ export interface IntegrationsSocialModel {
   width: number;
   height: number;
 }
+
+export interface NewsBoxSmallModel {
+  bagde: string;
+  heading: string;
+  desc: string;
+  src: string;
+}
