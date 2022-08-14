@@ -10,8 +10,9 @@ const HeaderTop = () => {
     setValue: setShowSideBar,
     nodeRef,
   } = useClickOutSide("button");
+
   return (
-    <div className="pt-8 pb-6 md:pb-0 flex items-center">
+    <div className="pt-8 pb-6 md:pb-10 lg:pb-0 flex items-center">
       <Logo></Logo>
       <SideBar showSideBar={showSideBar} ref={nodeRef}></SideBar>
       <Button

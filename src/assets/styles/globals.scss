@@ -12,6 +12,9 @@
   header {
     clip-path: ellipse(100% 100% at top);
   }
+  section {
+    @apply mb-16;
+  }
   input {
     @apply outline-none;
   }
@@ -43,18 +46,32 @@ img {
     flex-direction: column;
     row-gap: 20px;
     padding: 20px 25px;
+    margin: 10px 0;
+    border-radius: 16px;
     z-index: 50;
     transform: translateX(-100%);
     transition: all 0.5s ease-in;
-    @apply bg-yellow shadow-md;
+    @apply bg-gradient-to-b from-yellow to-sunnyBottom shadow-md;
     &.is-expand {
       transform: translateX(0);
     }
   }
 }
 
-// @media only screen and (max-width: 1024px) and (min-width: 1366px) {
-//   header {
-//     // clip-path: ellipse(20% 20% at top);
-//   }
-// }
+@media screen and (max-width: 768.98px) {
+  header {
+    clip-path: none;
+  }
+}
+
+.features-box-heading {
+  @apply text-primary font-semibold text-xl lg:text-2xl mb-5;
+}
+
+.features-box-heading-secondary {
+  @apply text-secondary font-bold font-secondary;
+}
+
+.features-box-desc {
+  @apply text-left text-lg text-gray;
+}

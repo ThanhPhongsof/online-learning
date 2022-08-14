@@ -1,13 +1,26 @@
-import { Layout } from "components/layout";
 import type { NextPage } from "next";
+import { Layout } from "components/layout";
+import {
+  AllInOne,
+  Company,
+  Integrations,
+  News,
+  OurFeatures,
+  WhatIsSkilline,
+  YouCanDoWithSkilline,
+} from "module/main";
 
 const Home: NextPage = () => {
   return (
     <>
       <Layout>
-        <h1 className="text-3xl font-bold underline text-red-500">
-          Hello world!
-        </h1>
+        <Company></Company>
+        <AllInOne></AllInOne>
+        <WhatIsSkilline></WhatIsSkilline>
+        <YouCanDoWithSkilline></YouCanDoWithSkilline>
+        <OurFeatures></OurFeatures>
+        <Integrations></Integrations>
+        <News></News>
       </Layout>
     </>
   );
