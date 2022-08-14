@@ -1,6 +1,11 @@
 import Image from "next/image";
+import classNames from "utils/classNames";
 
-const Logo = () => {
+type LogoProps = {
+  className?: string;
+};
+
+const Logo = ({ className = "text-primary" }: LogoProps) => {
   return (
     <div className="relative">
       <Image
@@ -12,7 +17,12 @@ const Logo = () => {
         objectFit="cover"
         objectPosition="center"
       ></Image>
-      <span className="absolute top-0 left-0 translate-x-1/4 translate-y-1/2 font-bold text-primary text-3xl tracking-[4%] z-50">
+      <span
+        className={classNames(
+          "absolute top-0 left-0 translate-x-1/4 translate-y-1/2 font-bold text-3xl tracking-[4%] z-50",
+          className
+        )}
+      >
         Skilline
       </span>
     </div>
